@@ -4,19 +4,7 @@ Welcome to bug inspector ! A simple gem to retrieve an error sample in Appsignal
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'bug-inspector'
-```
-
-And then execute:
-
-    $ bundle install
-
-Or install it yourself as:
-
-    $ gem install bug-inspector
+Download the repository. After creating your configuration folder, you will have the api available by using `bin/console` on this repo.
 
 ## Configuration
 
