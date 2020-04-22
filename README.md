@@ -1,6 +1,6 @@
 # Bug::Inspector
 
-Welcome to bug inspector ! A simple gem to retrieve an error sample in Appsignal, if you are find in the app.
+Welcome to bug inspector ! A simple gem to retrieve an error sample in Appsignal
 
 ## Installation
 
