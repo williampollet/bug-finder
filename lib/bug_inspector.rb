@@ -20,7 +20,7 @@ module BugInspector
       JSON.parse(HTTP.get(
         configuration.list_errors_url,
         params: {
-          action_id: method.gsub('#', '-hash-'),
+          action_id: method.gsub('#', '-hash-').gsub('/', '-slash-').gsub('.', '-dot-'),
           exception: exception,
           since: since,
           limit: limit,
