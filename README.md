@@ -31,7 +31,7 @@ app_id: MY_AMAZING_APPSIGNAL_APP_ID
 
 The inspector will let you use two methods to retrieve a sample :
 
-### `#list`
+### `#list` all occurrences of an error
 
 To list all occurrences of a specific exception do :
 ```ruby
@@ -43,6 +43,8 @@ BugInspector.list(
   count_only: false, # optional, default to false
 )
 ```
+
+### `#find` a specific occurence of an error
 
 To find a specific occurrence, and list all details and metadata for this event do :
 ```ruby
