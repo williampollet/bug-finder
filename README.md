@@ -46,7 +46,7 @@ BugInspector.list(
 
 To find a specific occurrence, and list all details and metadata for this event do :
 ```ruby
-BugInspector.find("5ea04dfgt18f54321c70e4f1")
+BugInspector.find("5ea04dfgt18f54321c70e4f1") # an error occurrence id, you can retrieve it by listing all occurrences of an error
 ```
 
 ## Development
