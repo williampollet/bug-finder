@@ -17,9 +17,7 @@ app_id: MY_AMAZING_APPSIGNAL_APP_ID
 
 ## Usage
 
-First, run `$ bin/console`.
-\n
-The inspector will let you use two methods to retrieve a sample :
+First, run `$ bin/console`. The inspector will let you use two methods to retrieve a sample :
 
 ### `#list` all occurrences of an error
 
