@@ -40,7 +40,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'pronto-rubocop', '~> 0.9.1'
   spec.add_development_dependency 'pronto-simplecov', '~> 0.1.1'
   spec.add_development_dependency 'pry', '~> 0.12'
-  spec.add_development_dependency 'rake', '~> 10.0'
+  spec.add_development_dependency 'rake', '>= 12.3.3'
   spec.add_development_dependency 'rspec', '~> 3.0'
   spec.add_development_dependency 'rubocop', '~> 0.60'
   spec.add_development_dependency 'simplecov', '~> 0.16.1'
