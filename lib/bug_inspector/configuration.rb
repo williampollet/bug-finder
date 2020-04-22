@@ -7,7 +7,7 @@ module BugInspector
       @token = application_config['token']
     end
 
-    def errors_url
+    def list_errors_url
       "https://appsignal.com/api/#{app_id}/samples/errors.json?token=#{token}"
     end
 

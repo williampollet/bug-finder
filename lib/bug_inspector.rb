@@ -16,9 +16,9 @@ module BugInspector
       yield(configuration)
     end
 
-    def retrieve_errors(method:, exception:, since: Time.now.to_i - 604800, limit: 200, count_only: false)
+    def list(method:, exception:, since: Time.now.to_i - 604800, limit: 200, count_only: false)
       JSON.parse(HTTP.get(
-        configuration.errors_url,
+        configuration.list_errors_url,
         params: {
           action_id: method.gsub('#', '-hash-'),
           exception: exception,
@@ -26,7 +26,18 @@ module BugInspector
           limit: limit,
           count_only: count_only,
         },
-      ).to_s)
+      ).to_s)['log_entries']
+    end
+
+    def find(error_id)
+      JSON.parse(
+        HTTP.get(
+          "https://appsignal.com/api/#{configuration.app_id}/samples/#{error_id}.json",
+          params: {
+            token: configuration.token
+          }
+        ).to_s
+      )
     end
   end
 
